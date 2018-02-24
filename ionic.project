@@ -1,0 +1,12 @@
+{
+  "name": "muslimChef",
+  "app_id": "1966d7b4",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}

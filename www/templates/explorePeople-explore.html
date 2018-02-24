@@ -1,0 +1,11 @@
+<ion-view view-title="Muslim Chef" hide-nav-bar="false">
+  <ion-content class="padding-0">
+    <div class="col col-50 inline padding-0 position-relative" ng-repeat="explore in explores">
+      <img class="width-100percent margin-bottom-minus-7" ng-src="{{explore.img}}">
+      <div class="left-30percent top-40percent categories-font-color" style="position: absolute">
+        <p class="font-size-17 font-weight-500">{{explore.recipe}}</p>
+        <p class="font-size-small font-weight-100 line-height-0">{{explore.recipeCount}} Recipes</p>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

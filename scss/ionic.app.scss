@@ -1,0 +1,88 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+
+/*background images*/
+$background-image-tour1-url : '../img/tourSlide1.png';
+$background-image-tour2-url : '../img/tourSlide2.png';
+$background-image-tour3-url : '../img/tourSlide3.png';
+$background-image-login-url : '../img/login.png';
+$advertise-img: '../img/advertiseImg.png';
+
+/*font colors*/
+$font-color-white: rgba(255, 255, 255, 0.9);
+$font-color-white-dim: rgba(255, 255, 255, 0.57) !important;
+$font-color-green: #73b420 !important;
+$font-color-light-grey : #989797;
+$font-color-pink : #e659bc;
+$font-color-grey: rgba(97, 96, 96, 0.69);
+$color-blue: #009cea;
+$font-color-dim-gray: rgba(152, 151, 151, 0.58);
+$categories-font-color: rgba(253, 251, 251, 0.93);
+$side-menu-header-font-color: #acc110;
+$ingredients-list-item-color: #343333;
+
+/*footer colors*/
+$footer-color: #f9f9f9;
+$footer-icons-color: #bebebe;
+
+
+/*icons colors*/
+$add-icon-green: #74b421;
+$facebook-icon-purple : #3e549c !important;
+$color-icon-selected: #ef5757;
+$icon-color: #d9d9d9;
+$camera-icon-color: #ffe058;
+$show-more-color: #656464;
+$done-button-color: #f8df64;
+
+/*main header bar color*/
+$header-bar-green : #99ca3c !important;
+
+/*background colors*/
+$ingredients-list-background: #f5f5f5;
+$settings-bar-background: #eeeeee;
+$delete-account-button: #ff3d3d;
+
+/*imported a font family*/
+@font-face {
+  font-family: 'Quicksand';
+  src:url('../www/lib/ionic/fonts/quicksand/Quicksand-Regular.otf');
+}
+$font-quick-sand: Quicksand !important;
+
+/*font family*/
+$font-myriad: Myriad Pro !important;
+
+/*placeholder font color*/
+$placeholder-font-color: #333333 !important;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+@import "common";
+@import "tour";
+@import "login";
+@import "popFeed.feed";
+@import "sideMenu";
+@import "visitUserProfile";
+@import "settings";
+@import "selectedPost";
+@import "editProfile";
+

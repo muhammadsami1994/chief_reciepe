@@ -1,0 +1,23 @@
+.coverImage{
+  background-image: url("../www/img/coverImage.png");
+}
+.follow-button{
+  float: left;
+  color: $color-blue;
+  font-size: 22px;
+  margin-top: -3px;
+}
+.visit-user-profile{
+  width: 10em;
+  font-size: 17px;
+  font-weight: 500;
+  height: 2.5em;
+  -webkit-border-radius: 20;
+  -moz-border-radius: 20;
+  border-radius: 20px;
+  color: $font-color-white;
+  background: #ffffff;
+  padding: 10px 20px 10px 20px;
+  border: solid #47413e 1.5px;
+  text-decoration: none;
+}

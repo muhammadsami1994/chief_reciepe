@@ -1,0 +1,26 @@
+<ion-view view-title="Muslim Chef" hide-nav-bar="false">
+  <ion-content class="padding-0">
+    <div class="border-bottom-people-card" ng-repeat="people in peoples">
+      <div class="row padding-top-0">
+        <div class="col col-66">
+          <div class="row">
+            <div class="col col-10"><img class="width-3em border-radius-50percent" ng-src="{{people.userImage}}" ui-sref="visitUserProfile"></div>
+            <div class="col col-offset-10 col-center">
+              <!--<div class="row"><p class="font-size-12">NIHCOLUS SAVAGE</p></div>-->
+              <p class="font-size-12 font-color-grey font-weight-700 line-height-1dot5">{{people.name}}</p>
+              <p class="font-size-12 line-height-0 font-weight-500 font-color-light-grey">{{people.country}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-center">
+          <i class="icon ion-ios-plus-outline font-size-28 add-icon-green float-right"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center" ng-repeat="image in people.images | limitTo:5">
+          <img class="width-96percent" ng-src="{{image}}">
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

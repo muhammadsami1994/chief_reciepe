@@ -1,0 +1,36 @@
+.cover-image{
+  background-image: url("../img/coverImage.png");
+  background-repeat: no-repeat;
+  background-size: 100% 27%
+}
+.done-button-color{
+  color: $done-button-color !important;
+}
+.cover-img-icon{
+  color: $camera-icon-color;
+  position: absolute;
+  right: 4%;
+  bottom: 46%;
+  font-size: x-large;
+}
+.delete-account-button{
+  width: 70%;
+  font-size: 17px;
+  font-weight: 500;
+  height: 2em;
+  -webkit-border-radius: 20;
+  -moz-border-radius: 20;
+  border-radius: 20px;
+  color: $font-color-white !important;
+  background: $delete-account-button;
+  padding: 10px 20px 10px 20px;
+  border: solid rgba(167, 167, 167, 0.35) 2px;
+  text-decoration: none;
+}
+.user-img-camera-icon{
+  color: $camera-icon-color;
+  position: absolute;
+  left: 47%;
+  top: 50%;
+  font-size: xx-large;
+}

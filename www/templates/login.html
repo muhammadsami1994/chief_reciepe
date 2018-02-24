@@ -1,0 +1,99 @@
+<ion-view view-title="LOGIN" hide-nav-bar="true">
+  <ion-content scroll="false" class="login-background-size login-background-image">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="text-center">
+      <p class="font-size-3em font-weight-100 font-color-green">Muslim Chef</p>
+    </div>
+    <br>
+    <br>
+
+    <div class="row tabs-border-top margin-bottom-minus21">
+      <div class="col col-center text-center" ng-click="showSignInUp = true"><span
+        ng-class="{'font-color-white-dim':showSignInUp == true}"
+        class="font-whit-rgba font-size-smaller font-weight-500">SIGN UP</span></div>
+      <div class="col col-center text-center" ng-click="showSignInUp = false"><span
+        ng-class="{'font-color-white-dim':showSignInUp == false}"
+        class="font-whit-rgba font-size-smaller font-weight-500">SIGN IN</span></div>
+    </div>
+    <div class="row">
+      <div class="col text-align-webkit-center padding-top-0">
+        <span class="triangle-up" ng-show="showSignInUp"></span>
+      </div>
+      <div class="col text-align-webkit-center padding-top-0">
+        <span class="triangle-up" ng-hide="showSignInUp"></span>
+      </div>
+    </div>
+    <div class="background-color-white margin-top-minus-6 padding-0" ng-show="showSignInUp">
+      <ion-scroll direction="y">
+          <div class="col">
+            <div class="text-align-webkit-center margin-top-12percent">
+              <div class="width-20em">
+                <label class="item item-input border-left-none border-right-none border-top-none">
+                  <input type="email" placeholder="E-mail">
+                </label>
+                <label class="item item-input border-left-none border-right-none">
+                  <input type="text" placeholder="Username">
+                </label>
+                <label class="item item-input border-left-none border-right-none">
+                  <input type="password" placeholder="Password">
+                </label>
+                <label class="item item-input border-left-none border-right-none">
+                  <input type="password" placeholder="Confirm Password">
+                </label>
+              </div>
+              <br>
+              <br>
+              <br>
+              <button class="create-account-button padding-top-0dot5percent">Create Account</button>
+              <br>
+              <br>
+
+              <div class="row width-13em">
+                <div class="col btn1 facebook-button padding-top-4percent"><i class="icon ion-social-facebook"></i></div>
+                <div class="col btn1 instagram-button padding-top-4percent"><i
+                  class="icon ion-social-instagram-outline"></i></div>
+              </div>
+            </div>
+          </div>
+      </ion-scroll>
+    </div>
+    <div class="background-color-white margin-top-minus-6 padding-0" ng-hide="showSignInUp">
+      <ion-scroll direction="y">
+        <div class="col">
+          <div class="text-align-webkit-center margin-top-12percent">
+            <div class="width-20em">
+              <label class="item item-input border-left-none border-right-none border-top-none">
+                <input type="email" placeholder="E-mail">
+              </label>
+              <label class="item item-input border-left-none border-right-none">
+                <input type="password" placeholder="Password">
+              </label>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button class="create-account-button padding-top-0dot5percent" ui-sref="popFeed.feed">Sign In</button>
+            <br>
+            <br>
+
+            <div class="row width-13em">
+              <div class="col btn1 facebook-button padding-top-4percent"><i class="icon ion-social-facebook"></i></div>
+              <div class="col btn1 instagram-button padding-top-4percent"><i
+                class="icon ion-social-instagram-outline"></i></div>
+            </div>
+            <div><p class="font-color-grey font-size-17 font-weight-500">Don't have an account</p></div>
+          </div>
+        </div>
+      </ion-scroll>
+    </div>
+  </ion-content>
+</ion-view>

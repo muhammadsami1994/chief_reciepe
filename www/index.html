@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+
+    <!-- compiled css output -->
+    <link href="css/ionic.app.css" rel="stylesheet">
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+
+    <!--Services-->
+    <script src="js/Services/dataService.js"></script>
+
+    <!--Controllers-->
+    <script src="js/Controllers/tourController.js"></script>
+    <script src="js/Controllers/loginController.js"></script>
+    <script src="js/Controllers/visitUserProfileController.js"></script>
+    <script src="js/Controllers/settingsController.js"></script>
+    <script src="js/Controllers/selectedPostController.js"></script>
+    <script src="js/Controllers/editProfileController.js"></script>
+
+    <!--popular feeds controllers-->
+    <script src="js/Controllers/popFeedController.js"></script>
+    <script src="js/Controllers/popFeed.feedController.js"></script>
+    <script src="js/Controllers/popFeed.popularController.js"></script>
+
+    <!--explore people controllers-->
+    <script src="js/Controllers/explorePeopleController.js"></script>
+    <script src="js/Controllers/explorePeople.exploreController.js"></script>
+    <script src="js/Controllers/explorePeople.peopleController.js"></script>
+
+  </head>
+  <body ng-app="muslimChef">
+  <!--side menu-->
+    <ion-side-menus>
+      <!-- Left menu -->
+      <ion-side-menu side="left" class="sideMenuBackground">
+        <ion-header-bar align-title="" class="background-transparent">
+          <div class="col col-10 padding-top-4percent">
+            <i class="icon ion-ios-search-strong search-button-icon-color font-size-22"></i>
+          </div>
+          <p class="title sideMenuHeaderColor">Muslim Chef</p>
+        </ion-header-bar>
+        <ion-content class="padding-top-16percent">
+          <div class="col">
+            <button class="button button-clear button-full font-weight-600 button-color-white" menu-close ui-sref="editProfile">
+              MY PROFILE
+            </button>
+            <button class="button button-clear button-full font-weight-600 button-color-white" menu-close ui-sref="popFeed.feed">
+              FEED
+            </button>
+            <button class="button button-clear button-full font-weight-600 button-color-white" menu-close ui-sref="selectedPost">
+              NOTIFICATIONS
+            </button>
+            <button class="button button-clear button-full font-weight-600 button-color-white" menu-close ui-sref="explorePeople.explore">
+              EXPLORE
+            </button>
+            <button class="button button-clear button-full font-weight-600 button-color-white" menu-close ui-sref="settings">
+              SETTINGS
+            </button>
+          </div>
+        </ion-content>
+      </ion-side-menu>
+
+      <ion-side-menu-content>
+        <!--header bar -->
+        <ion-nav-bar align-title="center" class="header-bar-green">
+          <ion-nav-buttons side="left">
+            <div ng-click="toggleLeft()"><i class="icon ion-navicon font-whit-rgba font-size-30 padding-left-35percent"></i></div>
+          </ion-nav-buttons>
+          <ion-nav-buttons side="right">
+            <i class="icon ion-ios-compose-outline font-whit-rgba font-size-24 padding-top-20percent padding-right-35percent"></i>
+          </ion-nav-buttons>
+        </ion-nav-bar>
+        <!--view -->
+        <ion-nav-view></ion-nav-view>
+      </ion-side-menu-content>
+    </ion-side-menus>
+  </body>
+</html>

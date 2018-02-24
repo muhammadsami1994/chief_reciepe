@@ -1,0 +1,19 @@
+/*background image*/
+.background-img-tour1{
+  background-image: url($background-image-tour1-url);
+}
+.background-img-tour2{
+  background-image: url($background-image-tour2-url);
+}
+.background-img-tour3{
+  background-image: url($background-image-tour3-url);
+}
+
+/*slide box*/
+.slider-pager{
+  bottom: 10%;
+}
+.slider-pager .slider-pager-page{
+  color: #ffffff !important;
+  font-size: 10px !important;
+}

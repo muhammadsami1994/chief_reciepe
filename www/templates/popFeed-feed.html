@@ -1,0 +1,61 @@
+<ion-view view-title="Muslim Chef" hide-nav-bar="false">
+  <ion-content class="padding-0">
+    <div class="border-bottom-feed-card" ng-repeat="feed in feeds">
+      <div class="row padding-top-0">
+        <div class="col col-66">
+          <div class="row">
+            <div class="col col-10"><img class="width-2dot5em border-radius-50percent" ng-src="{{feed.userImage}}"></div>
+            <div class="col col-offset-10">
+              <!--<div class="row"><p class="font-size-12">NIHCOLUS SAVAGE</p></div>-->
+              <p class="font-size-12 font-color-grey font-weight-700 line-height-1dot5">{{feed.name}}</p>
+
+              <p class="font-size-12 line-height-0 font-weight-500 font-color-light-grey">{{feed.postedOn}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-offset-10 col-center padding-bottom-0">
+          <div class="float-right">
+            <i class="icon ion-record font-color-pink font-size-10"></i>
+
+            <p class="display-inline-block">{{feed.dishType}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="position-relative margin-top-minus-8">
+        <img class="width-100percent" ng-src="{{feed.imgUrl}}">
+
+        <div class="width-100percent position-absolute font-whit-rgba bottom-14percent font-size-26 font-weight-100 padding-left-5percent">
+          {{feed.dishTitle}}
+        </div>
+      </div>
+      <div class="row height-30">
+        <div class="col display-webkit-inline-block">
+          <i class="icon ion-heart color-grey"></i>
+          <p class="font-size-11 font-color-green font-weight-600">&nbsp; {{feed.lastLikedPerson}} </p>
+          <p class="font-size-11 color-grey width-30percent">&nbsp; AND {{feed.totalLikes}} OTHERS</p>
+        </div>
+      </div>
+      <div class="row height-30">
+        <div class="col display-webkit-inline-block">
+          <i class="icon ion-ios-chatbubble color-grey font-size-17"></i>
+
+          <p class="font-size-11 font-color-green font-weight-600 width-inherit">&nbsp; {{feed.lastCommentedPerson}}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="width-5percent"></div>
+        <p class="col font-color-light-grey font-size-15">{{feed.lastComment}}</p></div>
+      <div class="row">
+        <div class="col col-20 display-webkit-inline-block">
+          <p class="font-size-12 font-weight-500 font-color-light-grey">
+            <i class="icon ion-heart font-size-22 color-pink"></i>&nbsp; LIKED</p></div>
+        <div class="col col-25 display-webkit-inline-block">
+          <p class="font-size-12 font-weight-500 font-color-light-grey"><i class="icon ion-ios-chatbubble font-size-22 color-grey"></i>&nbsp; COMMENT</p></div>
+        <div class="col display-webkit-inline-block">
+          <p class="font-size-12 font-weight-500 font-color-light-grey"><i class="icon ion-android-sync font-size-22 color-grey"></i>&nbsp; REPOST</p></div>
+        <div class="col col-10 display-webkit-inline-block"><i class="icon ion-more font-size-20 show-more-color"></i>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
